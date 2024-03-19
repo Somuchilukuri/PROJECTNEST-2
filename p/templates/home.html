@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.wellstar.org/-/media/project/wellstar/org/articles/cardiovasculardisease_abctableofexperts_blogimages_1440x972.png?rev=d90157c426d64b2cbe50e95e314c406a');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      text-align: right;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    #overlay-text {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #marquee-container {
+      position: fixed;
+      top: 90px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #marquee-text {
+      font-size: 70px;
+      font-style: italic;
+      color: black;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="marquee-container">
+    <div id="marquee-text">CARDIOCARE</div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome CARDIOCARE</h1>
+    <div id="overlay-text">Wanted to check</div>
+    <button type="button" onclick="window.location.href='/prediction'">Check Now</button>
+  </div>
+
+</body>
+</html>
+
